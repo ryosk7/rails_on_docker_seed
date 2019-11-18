@@ -13,18 +13,22 @@ $ git init
 # If you want to use commit template, you can use this. (This commit template is written in Japanese.)
 $ git config --local commit.template ./.commit_template
 $ docker-compose build
-$ docker-compose run rails new . -d mysql -T
+$ docker-compose run back rails new . -d mysql -T
 ```
 ### You should edit database.yml
 Like this!
 ```
+- username: root
+- password:
+- host: localhost
 + username: root
-+ password: password
++ password: root
 + host: db
 ```
 ### Run Rails server
 ```
-$ docker-compose run rails db:create
+$ docker-compose build
+$ docker-compose run back rails db:create
 $ docker-compose down
 $ docker-compose up -d
 $ docker-compose attach rails_server
