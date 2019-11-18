@@ -3,10 +3,8 @@
 ### git clone & move files
 ```
 $ git clone git@github.com:ryosk7/rails_on_docker_seed.git
-$ cd rails_on_docker_seed
-$ mv * ../
-$ mv .* ../
-$ cd ..
+$ mv ./rails_on_docker_seed/* ./
+$ mv ./rails_on_docker_seed/.* ./
 $ rm -rf rails_on_docker_seed
 $ rm -rf .git
 $ git init
