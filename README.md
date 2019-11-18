@@ -13,7 +13,7 @@ $ git init
 # If you want to use commit template, you can use this. (This commit template is written in Japanese.)
 $ git config --local commit.template ./.commit_template
 $ docker-compose build
-$ docker-compose run rails new .
+$ docker-compose run rails new . -d mysql -T
 ```
 ### You should edit database.yml
 Like this!
