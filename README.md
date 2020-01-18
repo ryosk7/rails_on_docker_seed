@@ -29,5 +29,5 @@ $ docker-compose build
 $ docker-compose run back rails db:create
 $ docker-compose down
 $ docker-compose up -d
-$ docker-compose attach rails_server
+$ docker attach rails_server
 ```
